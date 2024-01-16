@@ -1,0 +1,18 @@
+spring:
+  data:
+    cassandra:
+      keyspace-name: taco_cloud
+      schema-action: recreate
+      local-datacenter: datacenter1
+#      contact-points:
+#        - casshost-1.tacocloud.com
+#        - casshost-2.tacocloud.com
+#        - casshost-3.tacocloud.com
+#      port: 9043
+#      username: tacocloud
+#      password: s3cr3tP455w0rd
+  datasource:
+    generate-unique-name: false
+    name: tacocloud
+    # Database URL
+    #jdbc:h2:mem:tacocloud
