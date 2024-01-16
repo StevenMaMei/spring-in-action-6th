@@ -1,15 +1,18 @@
 package tacos;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.data.annotation.Id;
-import org.springframework.data.relational.core.mapping.Table;
+import lombok.RequiredArgsConstructor;
 
 @Data
-@Table
+@Entity
 @AllArgsConstructor
+@RequiredArgsConstructor
+// JPA Requires no args constructor
 @NoArgsConstructor(access = AccessLevel.PRIVATE, force = true)
 public class Ingredient {
 
